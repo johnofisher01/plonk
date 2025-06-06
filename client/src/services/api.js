@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "http://localhost:8000"; // Changed to FastAPI port
 
 export const fetchArticles = async (params) => {
   const { data } = await axios.get(`${API_BASE_URL}/articles`, { params });
